@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrafGaraj - Profesyonel Motorsiklet Parçaları ve Hizmetleri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">KrafGaraj</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#products" class="nav-link">Ürünler</a></li>
+                <li><a href="#services" class="nav-link">Hizmetler</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Profesyonel Motorsiklet Parçaları</h1>
+            <p class="hero-subtitle">Kaliteli gidon, motor parçaları ve özel tasarım ürünler</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Ürünleri İncele</a>
+                <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="motorcycle-hero">
+                <img src="images/motorcycle1.jpg" alt="KrafGaraj Motorsiklet" class="hero-motorcycle">
+                <div class="hero-overlay">
+                    <div class="hero-badge">
+                        <span>Özel Tasarım</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Ürün Kataloğu</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/handlebar1.jpg" alt="Özel Tasarım Gidon" class="product-img">
+                    </div>
+                    <h3>Özel Tasarım Gidon</h3>
+                    <p>Profesyonel kalitede özel tasarım gidonlar - Ape Hanger tarzı</p>
+                    <div class="product-price">₺1,500 - ₺3,000</div>
+                    <button class="btn btn-whatsapp" onclick="sendWhatsApp('Gidon hakkında bilgi almak istiyorum')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/handlebar2.jpg" alt="Vintage Gidon" class="product-img">
+                    </div>
+                    <h3>Vintage Gidon</h3>
+                    <p>Klasik tarzda özel tasarım gidonlar</p>
+                    <div class="product-price">₺2,000 - ₺4,000</div>
+                    <button class="btn btn-whatsapp" onclick="sendWhatsApp('Vintage gidon hakkında bilgi almak istiyorum')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/motorcycle1.jpg" alt="Özel Tasarım Motor" class="product-img">
+                    </div>
+                    <h3>Özel Tasarım Motorlar</h3>
+                    <p>Benzersiz tasarım motorlar ve modifikasyonlar</p>
+                    <div class="product-price">₺10,000 - ₺50,000</div>
+                    <button class="btn btn-whatsapp" onclick="sendWhatsApp('Özel tasarım motor hakkında bilgi almak istiyorum')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/handlebar2.jpg" alt="Z-Tipi Gidon" class="product-img">
+                    </div>
+                    <h3>Z-Tipi Gidon</h3>
+                    <p>Modern tasarım Z-şeklinde özel gidonlar</p>
+                    <div class="product-price">₺1,800 - ₺3,500</div>
+                    <button class="btn btn-whatsapp" onclick="sendWhatsApp('Z-tipi gidon hakkında bilgi almak istiyorum')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'tan Bilgi Al
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Özel Tasarım</h3>
+                    <p>Benzersiz motor tasarımları ve özelleştirmeler</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Motor Modifikasyonu</h3>
+                    <p>Performans artırıcı modifikasyonlar</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Güvenlik Ekipmanları</h3>
+                    <p>Kaliteli güvenlik ekipmanları ve aksesuarlar</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Kurulum Hizmeti</h3>
+                    <p>Profesyonel kurulum ve montaj hizmetleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>KrafGaraj Hakkında</h2>
+                    <p>KrafGaraj olarak, motorsiklet tutkunlarına en kaliteli parçaları ve hizmetleri sunuyoruz. Özel tasarım gidonlar, motor parçaları ve profesyonel bakım hizmetlerimizle sizlere hizmet veriyoruz.</p>
+                    <p>Deneyimli ekibimiz ve kaliteli ürünlerimizle motorsiklet dünyasında güvenilir bir partner olmaya devam ediyoruz.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Mutlu Müşteri</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Tamamlanan Proje</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Yıllık Deneyim</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-motorcycle">
+                        <img src="images/motorcycle1.jpg" alt="KrafGaraj Çalışma Alanı" class="about-img">
+                        <div class="about-overlay">
+                            <div class="about-stats-overlay">
+                                <div class="stat-overlay">
+                                    <span class="stat-number-overlay">500+</span>
+                                    <span class="stat-label-overlay">Mutlu Müşteri</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Bizimle İletişime Geçin</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+90 543 866 06 74</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@krafgaraj.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>İstanbul, Türkiye</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/krafgarage/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Hızlı İletişim</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Adınız" required>
+                        <input type="email" placeholder="E-posta" required>
+                        <input type="tel" placeholder="Telefon" required>
+                        <textarea placeholder="Mesajınız" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="sendWhatsApp('Merhaba, bilgi almak istiyorum')">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KrafGaraj</h4>
+                    <p>Profesyonel motorsiklet parçaları ve hizmetleri</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#products">Ürünler</a></li>
+                        <li><a href="#services">Hizmetler</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p>+90 543 866 06 74</p>
+                    <p>info@krafgaraj.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KrafGaraj. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
